@@ -1,0 +1,29 @@
+:root {
+  color-scheme: light dark;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, sans-serif;
+}
+
+h1 {
+  font-size: var(--type-4xl)
+}
+
+.container {
+  max-width: 96rem;
+  margin-inline: auto;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: inline-flex;
+  gap: var(--space-xs);
+  margin:0;
+  padding: 0;
+}
