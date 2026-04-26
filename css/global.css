@@ -7,12 +7,13 @@ html {
 }
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  "Helvetica Neue", Arial, sans-serif;
+  font: var(--text-typography-body);
+  font-size: var(--type-m);
 }
 
 h1 {
-  font-size: var(--type-4xl)
+  font: var(--text-typography-heading);
+  font-size: var(--type-4xl);
 }
 
 .container {
