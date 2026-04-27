@@ -1,0 +1,37 @@
+text
+  fonts
+    $type=fontFamily
+    sans
+      $value=font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  sizes
+    $type=fontSize
+    h1
+      $value=48
+    body
+      $value=16
+  weights
+    $type=fontWeight
+    regular
+      $value=400
+    bold
+      $value=700
+  lineHeights
+    $type=number
+    normal
+      $value=1.5
+    large
+      $value=1.8
+    tight
+      $value=1.2
+  typography
+    $type
+    h1
+      $value
+        fontFamily={text.fonts.sans}
+        fontWeight={text.weights.bold}
+        lineHeight={text.lineHeights.tight}
+    body
+      $value
+        fontFamily={text.fonts.sans}
+        fontWeight={text.weights.regular}
+        lineHeight={text.lineHeights.normal}

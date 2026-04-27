@@ -1,0 +1,21 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --colors-black: hsl(0deg 0% 0%);
+  --colors-white: hsl(0deg 0% 100%);
+  --colors-orange-500: oklch(67.85% .2145 38.061deg);
+  --text-fonts-serif: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --text-fonts-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --text-sizes-heading: 2.5rem;
+  --text-sizes-body: 1rem;
+  --text-weights-light: thin;
+  --text-weights-regular: 400;
+  --text-weights-bold: 700;
+  --text-line-heights-normal: 1.5;
+  --text-line-heights-tight: 1.2;
+  --text-line-heights-large: 1.8;
+  --text-typography-heading: 700 2.5rem/1.2 system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --text-typography-body: 400 1rem/1.5 system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}

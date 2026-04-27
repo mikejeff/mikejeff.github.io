@@ -1,0 +1,9 @@
+colors
+  $type=color
+  black
+    $value=hsl(0deg 0% 0%)
+  white
+    $value=hsl(0deg 0% 100%)
+  orange
+    500
+      $value=oklch(67.85% .2145 38.061deg)
