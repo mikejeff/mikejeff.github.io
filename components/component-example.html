@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- TODO: Skip to content link -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/modular-scales.css">
+  <link rel="stylesheet" href="../style-dictionary/build/css/_variables.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/utilities.css">
+  <link rel="stylesheet" href="../css/global.css">
+
+  <title>UX Workbench of Mike Jeffery | Component Example</title>
+</head>
+
+<body stack class="stack-2xl container margin-inline:auto">
+  <header class="site-header">
+    <ul class="main-nav">
+      <li><a href="/" class="main-nav__link">Home</a></li>
+      <li><a href="#" class="main-nav__link">Design</a></li>
+      <li><a href="#" class="main-nav__link">Prototypes</a></li>
+      <li><a href="#" class="main-nav__link">Docs</a></li>
+      <li><a href="#" class="main-nav__link">Workflows</a></li>
+    </ul>
+  </header>
+  <main stack id="#main" class="container margin-inline:auto stack-xl">
+    <h1>Component Example</h1>
+    <p>The Component Example component is a simple documentation pattern for showing
+      a UI element in two states: rendered and inspectable.</p>
+
+    <p>It presents a live preview of a component in use, followed by the exact markup
+      used to create it. In this example, it demonstrates the same button treatment
+      applied to both a native <code>&lt;button&gt;</code> element and a styled anchor,
+      making it useful for showing how a component behaves across different
+      semantic contexts.</p>
+
+    <p>The component is split into two sections:
+
+    <ul>
+      <li>Preview: renders the component as it appears in the interface so its visual
+        treatment and behavior can be evaluated in context.</li>
+      <li>Source: displays the corresponding HTML in a readable code block so the implementation
+        can be referenced directly.</li>
+    </ul>
+    </p>
+
+    <p>Structurally, it acts as a lightweight pattern documentation block. It's part demo,
+      part code reference. It is useful for documenting reusable UI components, comparing
+      semantic variations, and building a component library in public without needing
+      separate design artifacts.</p>
+
+    <div class="component-example">
+      <div class="component-example__preview">
+        <button class="button">Button</button>
+        <a class="button" href="https://mikejeff.com/">Button</a>
+      </div>
+      <div class="component-example__source">
+        <pre>
+          <code>
+&lt;button class="button"&gt;Button&lt;/button&gt;
+&lt;a class="button" href="https://mikejeff.com/"&gt;Button&lt;/a&gt;
+          </code>
+        </pre>
+      </div>
+    </div>
+
+  </main>
+  <style>
+    .component-example {
+      max-width: 400px;
+      border: var(--border-composite-subtle);
+      border-radius: var(--border-radius-gentle);
+      overflow: clip;
+    }
+
+    .component-example__preview {
+      background: light-dark(#000, var(--themes-dark-bg-middle));
+      padding-inline: var(--space-md);
+      padding-block: var(--space-md);
+    }
+
+    .component-example__source {
+      font-family: var(--text-fonts-mono);
+      background-color: light-dark(#fff, var(--themes-dark-bg-base));
+      padding-inline: var(--space-md);
+      padding-block: var(--space-md);
+      overflow: auto;
+
+      & code {
+        font-size: var(--type-sm);
+      }
+    }
+  </style>
+
+  <footer class="site-footer">
+    &copy; 2026 Michael R. Jeffery
+  </footer>
+</body>
+
+</html>
