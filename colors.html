@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- TODO: Skip to content link -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/modular-scales.css">
+  <link rel="stylesheet" href="./style-dictionary/build/css/_variables.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/utilities.css">
+  <link rel="stylesheet" href="./css/global.css">
+
+  <title>UX Workbench of Mike Jeffery | Component Example</title>
+</head>
+
+<body stack class="stack-2xl container margin-inline:auto">
+  <header class="site-header">
+    <ul class="main-nav">
+      <li><a href="/" class="main-nav__link">Home</a></li>
+      <li><a href="#" class="main-nav__link">Design</a></li>
+      <li><a href="#" class="main-nav__link">Prototypes</a></li>
+      <li><a href="#" class="main-nav__link">Docs</a></li>
+      <li><a href="#" class="main-nav__link">Workflows</a></li>
+    </ul>
+  </header>
+  <main id="#main">
+    <h1>Color Tokens</h1>
+    <section class="swatches" id="swatches"></section>
+  </main>
+
+  <footer class="site-footer">
+    &copy; 2026 Michael R. Jeffery
+  </footer>
+
+  <script>
+    const TOKENS_PATH = './style-dictionary/tokens/colors.json';
+
+    async function loadTokens() {
+      const response = await fetch(TOKENS_PATH);
+
+      if (!response.ok) {
+        throw new Error(`Failed to load tokens: ${response.status}`);
+      }
+
+      return response.json();
+    }
+
+    function isLeafToken(value) {
+      return value && typeof value === 'object' && '$value' in value;
+    }
+
+    function toCssVarName(pathParts) {
+      return `--colors-${pathParts.join('-')}`;
+    }
+
+    function flattenColors(node, path = []) {
+      const results = [];
+
+      for (const [key, value] of Object.entries(node)) {
+        if (key.startsWith('$')) continue;
+
+        if (isLeafToken(value)) {
+          results.push({
+            name: toCssVarName([...path, key]),
+            value: value.$value
+          });
+        } else if (value && typeof value === 'object') {
+          results.push(...flattenColors(value, [...path, key]));
+        }
+      }
+
+      return results;
+    }
+
+    function createSwatch(token) {
+      const article = document.createElement('article');
+      article.className = 'swatch';
+
+      const color = document.createElement('div');
+      color.className = 'swatch__color';
+      color.style.backgroundColor = token.value;
+
+      const meta = document.createElement('div');
+      meta.className = 'swatch__meta';
+
+      const name = document.createElement('div');
+      name.className = 'swatch__name';
+      name.textContent = token.name;
+
+      const value = document.createElement('div');
+      value.className = 'swatch__value';
+      value.textContent = token.value;
+
+      meta.append(name, value);
+      article.append(color, meta);
+
+      return article;
+    }
+
+    async function init() {
+      const container = document.getElementById('swatches');
+
+      try {
+        const data = await loadTokens();
+        const tokens = flattenColors(data.colors);
+
+        tokens.forEach((token) => {
+          container.append(createSwatch(token));
+        });
+      } catch (error) {
+        container.textContent = 'Unable to load color tokens.';
+        console.error(error);
+      }
+    }
+
+    init();
+  </script>
+  <style>
+    main {
+      display: grid;
+      gap: var(--space-md);
+    }
+
+    .swatches {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+      gap: var(--space-md);
+    }
+
+    .swatch {
+      display: grid;
+      gap: var(--space-sm);
+    }
+
+    .swatch__color {
+      min-height: 6rem;
+      border: var(--border-shorthand-subtle);
+      border-radius: var(--border-radius-gentle);
+    }
+
+    .swatch__meta {
+      display: grid;
+      gap: var(--space-2xs);
+    }
+
+    .swatch__name {
+      font-weight: var(--text-weights-semibold);
+    }
+
+    .swatch__value {
+      font-family: var(--text-fonts-mono);
+      font-size: var(--type-sm);
+    }
+  </style>
+</body>
+
+</html>
