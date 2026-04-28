@@ -1,15 +1,266 @@
 {
   "colors": {
     "$type": "color",
-    "black": {
-      "$value": "hsl(0deg 0% 0%)"
+    "neutral": {
+      "50": {
+        "$value": "hsl(0deg 0% 100%)"
+      },
+      "75": {
+        "$value": "hsl(0deg 0% 95%)"
+      },
+      "100": {
+        "$value": "hsl(0deg 0% 90%)"
+      },
+      "200": {
+        "$value": "hsl(0deg 0% 80%)"
+      },
+      "300": {
+        "$value": "hsl(0deg 0% 70%)"
+      },
+      "400": {
+        "$value": "hsl(0deg 0% 60%)"
+      },
+      "500": {
+        "$value": "hsl(0deg 0% 50%)"
+      },
+      "600": {
+        "$value": "hsl(0deg 0% 40%)"
+      },
+      "700": {
+        "$value": "hsl(0deg 0% 30%)"
+      },
+      "800": {
+        "$value": "hsl(0deg 0% 20%)"
+      },
+      "850": {
+        "$value": "hsl(0deg 0% 15%)"
+      },
+      "900": {
+        "$value": "hsl(0deg 0% 10%)"
+      },
+      "925": {
+        "$value": "hsl(0deg 0% 5%)"
+      },
+      "950": {
+        "$value": "hsl(0deg 0% 0%)"
+      }
     },
-    "white": {
-      "$value": "hsl(0deg 0% 100%)"
+    "red": {
+      "50": {
+        "$value": "hsl(0deg 100% 95%)"
+      },
+      "100": {
+        "$value": "hsl(0deg 100% 86%)"
+      },
+      "200": {
+        "$value": "hsl(0deg 100% 80%)"
+      },
+      "300": {
+        "$value": "hsl(0deg 100% 68%)"
+      },
+      "400": {
+        "$value": "hsl(0deg 100% 59%)"
+      },
+      "500": {
+        "$value": "hsl(0deg 100% 50%)"
+      },
+      "600": {
+        "$value": "hsl(0deg 100% 41%)"
+      },
+      "700": {
+        "$value": "hsl(0deg 100% 32%)"
+      },
+      "800": {
+        "$value": "hsl(0deg 100% 23%)"
+      },
+      "900": {
+        "$value": "hsl(0deg 100% 14%)"
+      },
+      "950": {
+        "$value": "hsl(0deg 100% 5%)"
+      }
     },
     "orange": {
+      "50": {
+        "$value": "hsl(17deg 100% 95%)"
+      },
+      "100": {
+        "$value": "hsl(17deg 100% 86%)"
+      },
+      "200": {
+        "$value": "hsl(17deg 100% 77%)"
+      },
+      "300": {
+        "$value": "hsl(17deg 100% 68%)"
+      },
+      "400": {
+        "$value": "hsl(17deg 100% 59%)"
+      },
       "500": {
-        "$value": "oklch(67.85% .2145 38.061deg)"
+        "$value": "hsl(17deg 100% 54%)"
+      },
+      "600": {
+        "$value": "hsl(17deg 100% 41%)"
+      },
+      "700": {
+        "$value": "hsl(17deg 100% 32%)"
+      },
+      "800": {
+        "$value": "hsl(17deg 100% 23%)"
+      },
+      "900": {
+        "$value": "hsl(17deg 100% 14%)"
+      },
+      "950": {
+        "$value": "hsl(17deg 100% 5%)"
+      }
+    },
+    "blue": {
+      "50": {
+        "$value": "hsl(240deg 100% 95%)"
+      },
+      "100": {
+        "$value": "hsl(240deg 100% 86%)"
+      },
+      "200": {
+        "$value": "hsl(240deg 100% 80%)"
+      },
+      "300": {
+        "$value": "hsl(240deg 100% 68%)"
+      },
+      "400": {
+        "$value": "hsl(240deg 100% 59%)"
+      },
+      "500": {
+        "$value": "hsl(240deg 100% 50%)"
+      },
+      "600": {
+        "$value": "hsl(240deg 100% 41%)"
+      },
+      "700": {
+        "$value": "hsl(240deg 100% 32%)"
+      },
+      "800": {
+        "$value": "hsl(240deg 100% 23%)"
+      },
+      "900": {
+        "$value": "hsl(240deg 100% 14%)"
+      },
+      "950": {
+        "$value": "hsl(240deg 100% 5%)"
+      }
+    },
+    "purple": {
+      "50": {
+        "$value": "hsl(270deg 69% 95%)"
+      },
+      "100": {
+        "$value": "hsl(270deg 69% 86%)"
+      },
+      "200": {
+        "$value": "hsl(270deg 69% 80%)"
+      },
+      "300": {
+        "$value": "hsl(270deg 69% 68%)"
+      },
+      "400": {
+        "$value": "hsl(270deg 69% 59%)"
+      },
+      "500": {
+        "$value": "hsl(270deg 69% 50%)"
+      },
+      "600": {
+        "$value": "hsl(270deg 69% 41%)"
+      },
+      "700": {
+        "$value": "hsl(270deg 69% 32%)"
+      },
+      "800": {
+        "$value": "hsl(270deg 69% 23%)"
+      },
+      "900": {
+        "$value": "hsl(270deg 69% 14%)"
+      },
+      "950": {
+        "$value": "hsl(270deg 69% 5%)"
+      }
+    }
+  },
+  "themes": {
+    "dark": {
+      "link": {
+        "neutral": {
+          "$value": "{colors.blue.200}"
+        },
+        "hover": {
+          "$value": "{colors.blue.100}"
+        },
+        "visited": {
+          "$value": "{colors.purple.200}"
+        },
+        "active": {
+          "$value": "{colors.red.200}"
+        }
+      },
+      "bg": {
+        "base": {
+          "$value": "{colors.neutral.925}"
+        },
+        "middle": {
+          "$value": "{colors.neutral.900}"
+        },
+        "top": {
+          "$value": "{colors.neutral.800}"
+        }
+      },
+      "fg": {
+        "base": {
+          "$value": "{colors.neutral.100}"
+        },
+        "muted": {
+          "$value": "{colors.neutral.300}"
+        },
+        "accent": {
+          "$value": "{colors.neutral.50}"
+        }
+      }
+    },
+    "light": {
+      "link": {
+        "neutral": {
+          "$value": "{colors.blue.500}"
+        },
+        "hover": {
+          "$value": "{colors.blue.100}"
+        },
+        "visited": {
+          "$value": "{colors.purple.200}"
+        },
+        "active": {
+          "$value": "{colors.red.200}"
+        }
+      },
+      "bg": {
+        "base": {
+          "$value": "{colors.neutral.50}"
+        },
+        "middle": {
+          "$value": "{colors.neutral.200}"
+        },
+        "top": {
+          "$value": "{colors.neutral.400}"
+        }
+      },
+      "fg": {
+        "base": {
+          "$value": "{colors.neutral.800}"
+        },
+        "muted": {
+          "$value": "{colors.neutral.600}"
+        },
+        "accent": {
+          "$value": "{colors.neutral.950}"
+        }
       }
     }
   }
