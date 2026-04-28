@@ -8,7 +8,7 @@
       "buildPath": "build/css/",
       "files": [
         {
-          "destination": "_variables.css",
+          "destination": "variables.css",
           "format": "css/variables"
         }
       ]
