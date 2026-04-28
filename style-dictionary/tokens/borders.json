@@ -1,0 +1,64 @@
+{
+  "border": {
+    "radius": {
+      "$type": "borderRadius",
+      "sharp": {
+        "$value": "0.25rem"
+      },
+      "gentle": {
+        "$value": "0.5rem"
+      }
+    },
+    "weights": {
+      "$type": "borderWidth",
+      "thin": {
+        "$value": "1px"
+      },
+      "medium": {
+        "$value": "2px"
+      },
+      "thick": {
+        "$value": "4px"
+      }
+    },
+    "colors": {
+      "$type": "color",
+      "base": {
+        "$value": "{colors.neutral.900}"
+      },
+      "muted": {
+        "$value": "{colors.neutral.300}"
+      }
+    },
+    "style": {
+      "$type": "strokeStyle",
+      "solid": {
+        "$value": "solid"
+      }
+    },
+    "composite": {
+      "$type": "border",
+      "subtle": {
+        "$value": {
+          "width": "{border.weights.thin}",
+          "style": "{border.style.solid}",
+          "color": "{border.colors.muted}"
+        }
+      },
+      "strong": {
+        "$value": {
+          "width": "{border.weights.medium}",
+          "style": "{border.style.solid}",
+          "color": "{border.colors.base}"
+        }
+      },
+      "focus": {
+        "$value": {
+          "width": "{border.weights.thick}",
+          "style": "{border.style.solid}",
+          "color": "{border.colors.base}"
+        }
+      }
+    }
+  }
+}
