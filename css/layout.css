@@ -1,14 +1,20 @@
-.stack {
+/* .stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+} */
+
+[stack=flex] {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
-.stack > * {
+[stack] > * {
   margin-block: 0;
 }
 
-.stack > * + * {
+[stack] > * + * {
   margin-block-start: var(--space-md, 1.5rem);
 }
 
@@ -26,4 +32,13 @@
 
 .stack-xl > * + * {
   margin-block-start: var(--space-xl);
+}
+.stack-2xl > * + * {
+  margin-block-start: var(--space-2xl);
+}
+.stack-3xl > * + * {
+  margin-block-start: var(--space-3xl);
+}
+.stack-4xl > * + * {
+  margin-block-start: var(--space-4xl);
 }
