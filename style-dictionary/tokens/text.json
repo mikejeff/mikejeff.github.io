@@ -2,8 +2,8 @@
   "text": {
     "fonts": {
       "$type": "fontFamily",
-      "serif": {
-        "$value": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
+      "mono": {
+        "$value": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;"
       },
       "sans": {
         "$value": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
@@ -21,11 +21,16 @@
     "weights": {
       "$type": "fontWeight",
       "light": {
-        "$value": "thin"
+        "$type": "number",
+        "$value": "300"
       },
       "regular": {
         "$type": "number",
         "$value": "400"
+      },
+      "semibold": {
+        "$type": "number",
+        "$value": "600"
       },
       "bold": {
         "$type": "number",
@@ -56,7 +61,7 @@
       },
       "body": {
         "$value": {
-          "fontFamily": "{text.fonts.serif}",
+          "fontFamily": "{text.fonts.sans}",
           "fontWeight": "{text.weights.regular}",
           "fontSize": "{text.sizes.body}",
           "lineHeight": "{text.lineHeights.normal}"
