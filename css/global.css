@@ -1,6 +1,5 @@
 :root {
   color-scheme: light dark;
-
 }
 
 :where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
@@ -103,9 +102,9 @@ h1 {
   color: light-dark(#000, var(--themes-dark-fg-base));
 }
 
-.main-nav__link:hover {
-  /* color: light-dark(var(--themes-light-link-neutral), var(--themes-dark-link-hover)); */
-}
+/* .main-nav__link:hover {
+  color: light-dark(var(--themes-light-link-neutral), var(--themes-dark-link-hover));
+} */
 
 /* a:not([class]):visited:hover
 a:not([class]):focus-visible
@@ -117,7 +116,8 @@ a:not([class]):hover:active {}
 a:not([class]):focus-visible:active {}
 a:not([class]):visited:active {} */
 
-p {
+p,
+li {
   max-width: 60ch;
 }
 
