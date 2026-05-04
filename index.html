@@ -13,28 +13,11 @@
   <link rel="stylesheet" href="./css/utilities.css">
   <link rel="stylesheet" href="./css/global.css">
 
-  <title>Home | UX Workbench of Mike Jeffery</title>
+        <title>Home | UX Workbench of Mike Jeffery</title>
 </head>
 
 <body stack class="stack-2xl container margin-inline:auto">
-  <header class="site-header">
-    <ul class="main-nav">
-      <li><a href="/" class="main-nav__link">Home</a></li>
-      <li><a href="/colors.html" class="main-nav__link">Colors in use</a></li>
-      <!-- <li><a href="#" class="main-nav__link">Design</a></li> -->
-      <!-- <li><a href="#" class="main-nav__link">Prototypes</a></li> -->
-      <li>
-        <details>
-          <summary>Prototypes</summary>
-          <ul>
-            <li><a href="/components/component-example.html" class="main-nav__link">Component example</a></li>
-          </ul>
-        </details>
-      </li>
-      <!-- <li><a href="#" class="main-nav__link">Docs</a></li> -->
-      <!-- <li><a href="#" class="main-nav__link">Workflows</a></li> -->
-    </ul>
-  </header>
+  <header class="site-header" data-include="../partials/header.html"></header>
   <main id="#main">
     <h1>UX Workbench</h1>
     <p>Welcome to my workbench. This is where I build user interface components, patterns, and the foundations of a
@@ -55,11 +38,10 @@
     <p>I’m a developer with strong design instincts, and most of my thinking lives in the overlap between the two. This
       is where I work through that in public. If you’d like the broader version, <a href="https://mikejeff.com/">my main
         site</a> has a little more about me
-      and the occasional post when I have something worth saying.</P. </main>
+      and the occasional post when I have something worth saying.</p>.
   </main>
-  <footer class="site-footer">
-    &copy; 2026 Michael R. Jeffery · <a href="https://mikejeff.com/">www.mikejeff.com</a>
-  </footer>
+  <footer class="site-footer" data-include="../partials/footer.html"></footer>
+  <script src="../js/include-partials.js"></script>
 </body>
 
 </html>

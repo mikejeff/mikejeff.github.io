@@ -17,32 +17,14 @@
 </head>
 
 <body stack class="stack-2xl container margin-inline:auto">
-  <header class="site-header">
-    <ul class="main-nav">
-      <li><a href="/" class="main-nav__link">Home</a></li>
-      <li><a href="/colors.html" class="main-nav__link">Colors in use</a></li>
-      <!-- <li><a href="#" class="main-nav__link">Design</a></li> -->
-      <!-- <li><a href="#" class="main-nav__link">Prototypes</a></li> -->
-      <li>
-        <details>
-          <summary>Prototypes</summary>
-          <ul>
-            <li><a href="/components/component-example.html" class="main-nav__link">Component example</a></li>
-          </ul>
-        </details>
-      </li>
-      <!-- <li><a href="#" class="main-nav__link">Docs</a></li> -->
-      <!-- <li><a href="#" class="main-nav__link">Workflows</a></li> -->
-    </ul>
-  </header>
+  <header class="site-header" data-include="../partials/header.html"></header>
   <main id="#main">
     <h1>Color Tokens</h1>
     <section class="swatches" id="swatches"></section>
   </main>
 
-  <footer class="site-footer">
-    &copy; 2026 Michael R. Jeffery
-  </footer>
+  <footer class="site-footer" data-include="../partials/footer.html"></footer>
+  <script src="../js/include-partials.js"></script>
 
   <script>
     const TOKENS_PATH = './style-dictionary/tokens/colors.json';
