@@ -1,47 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <!-- TODO: Skip to content link -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <!-- TODO: Skip to content link -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/modular-scales.css" />
+    <link rel="stylesheet" href="./style-dictionary/build/css/variables.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/utilities.css" />
+    <link rel="stylesheet" href="./css/global.css" />
 
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/modular-scales.css">
-  <link rel="stylesheet" href="./style-dictionary/build/css/variables.css">
-  <link rel="stylesheet" href="./css/layout.css">
-  <link rel="stylesheet" href="./css/utilities.css">
-  <link rel="stylesheet" href="./css/global.css">
+    <title>Home | UX Workbench of Mike Jeffery</title>
+  </head>
 
-        <title>Home | UX Workbench of Mike Jeffery</title>
-</head>
+  <body stack class="stack-2xl container margin-inline:auto">
+    <header class="site-header" data-include="../partials/header.html"></header>
+    <main id="#main">
+      <h1>UX Workbench</h1>
+      <p>
+        Welcome to my workbench. This is where I build user interface
+        components, patterns, and the foundations of a design system in real
+        time. Everything here is evolving in public, which means most of it is
+        in progress unless noted otherwise.
+      </p>
 
-<body stack class="stack-2xl container margin-inline:auto">
-  <header class="site-header" data-include="../partials/header.html"></header>
-  <main id="#main">
-    <h1>UX Workbench</h1>
-    <p>Welcome to my workbench. This is where I build user interface components, patterns, and the foundations of a
-      design system in real time. Everything here is evolving in public, which means most of it is in progress unless
-      noted otherwise.</p>
+      <p>
+        I design in the browser first. It’s the fastest way for me to test
+        ideas, refine interactions, and make decisions in the medium the work
+        actually lives in. It keeps the feedback loop tight, cuts down on
+        translation between design tools and code, and makes it easier to focus
+        on how something behaves instead of how polished the mockup looks. Or,
+        to paraphrase
+        <a href="https://www.youtube.com/watch?v=qKBlAi-hRA8">Brad Frost</a>:
+        you can’t make toast with a picture of a toaster.
+      </p>
 
-    <p>I design in the browser first. It’s the fastest way for me to test ideas, refine interactions, and make decisions
-      in the medium the work actually lives in. It keeps the feedback loop tight, cuts down on translation between
-      design tools and code, and makes it easier to focus on how something behaves instead of how polished the mockup
-      looks. Or, to paraphrase <a href="https://www.youtube.com/watch?v=qKBlAi-hRA8">Brad Frost</a>: you can’t make
-      toast with a picture of a toaster.</p>
+      <p>
+        This workbench is where I figure out what holds up. Some of that means
+        building components. Some of it means testing patterns, naming things,
+        breaking systems apart, and putting them back together in ways that are
+        easier to use and easier to maintain. Over time, this becomes a working
+        system shaped by real constraints, iteration, and use.
+      </p>
 
-    <p>This workbench is where I figure out what holds up. Some of that means building components. Some of it means
-      testing patterns, naming things, breaking systems apart, and putting them back together in ways that are easier to
-      use and easier to maintain. Over time, this becomes a working system shaped by real constraints, iteration, and
-      use.</p>
-
-    <p>I’m a developer with strong design instincts, and most of my thinking lives in the overlap between the two. This
-      is where I work through that in public. If you’d like the broader version, <a href="https://mikejeff.com/">my main
-        site</a> has a little more about me
-      and the occasional post when I have something worth saying.</p>
-  </main>
-  <footer class="site-footer" data-include="../partials/footer.html"></footer>
-  <script src="../js/include-partials.js"></script>
-</body>
-
+      <p>
+        I’m a developer with strong design instincts, and most of my thinking
+        lives in the overlap between the two. This is where I work through that
+        in public. If you’d like the broader version,
+        <a href="https://mikejeff.com/">my main site</a> has a little more about
+        me and the occasional post when I have something worth saying.
+      </p>
+    </main>
+    <footer class="site-footer" data-include="../partials/footer.html"></footer>
+    <script src="../js/include-partials.js"></script>
+  </body>
 </html>
