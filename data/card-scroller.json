@@ -1,0 +1,92 @@
+{
+  "cards": {
+    "card0": {
+      "heading": "Dark red Vans",
+      "body": "A timeless low-top skate shoe in dark red canvas with clean lines and everyday versatility.",
+      "img": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=400&amp;h=225&amp;fit=crop&amp;auto=format",
+      "alt": "A dark red Vans low-top sneaker photographed against a warm yellow background.",
+      "link": "#",
+      "cta": "Add to cart"
+    },
+    "card1": {
+      "heading": "Orange Adidas",
+      "body": "A bright orange running shoe built to stand out, with high-visibility color and lightweight athletic styling.",
+      "img": "https://images.unsplash.com/photo-1580902394724-b08ff9ba7e8a?w=400&h=225&fit=crop&auto=format",
+      "alt": "A single orange Adidas running shoe photographed on a textured dark stone surface.",
+      "link": "#",
+      "cta": "Add to cart"
+    },
+    "card2": {
+      "heading": "White Pumas",
+      "body": "A clean white classic with old-school streetwear roots and just enough history to back it up.",
+      "img": "https://images.unsplash.com/photo-1715003132895-b10a23d3c90f?w=400&h=225&fit=crop&auto=format",
+      "alt": "A white Puma sneaker photographed outdoors with a soft city skyline in the background.",
+      "link": "#",
+      "cta": "Add to cart"
+    },
+    "card3": {
+      "heading": "And1 Hightops",
+      "body": "A gray high-top basketball sneaker with textured panels and a bold, street-ready silhouette.",
+      "img": "https://images.unsplash.com/photo-1710643301056-1e384538cd2a?w=400&h=225&fit=crop&auto=format",
+      "alt": "A pair of gray And1 high-top basketball sneakers photographed against a clean white background.",
+      "link": "#",
+      "cta": "Add to cart"
+    },
+    "card4": {
+      "heading": "Uh oh, someone tossed your sneak!",
+      "body": "Not exactly performance gear, but definitely a cautionary tale. Keep an eye on your sneakers around this guy.",
+      "img": "https://images.unsplash.com/photo-1465877783223-4eba513e27c6?w=400&h=225&fit=crop&auto=format",
+      "alt": "A hand tossing a sneaker into the air against a bright outdoor sky.",
+      "link": "#",
+      "cta": "Add to cart"
+    },
+    "card5": {
+      "heading": "Converse All-Stars",
+      "body": "An iconic high-top with timeless style, canvas construction, and enough attitude to outlast the trends.",
+      "img": "https://images.unsplash.com/photo-1561909848-977d0617f275?w=400&h=225&fit=crop&auto=format",
+      "alt": "An orange Converse All-Star high-top sneaker held up against a softly blurred outdoor background.",
+      "link": "#",
+      "cta": "Add to cart"
+    },
+    "card6": {
+      "heading": "Nike Dunk low",
+      "body": "A dependable everyday sneaker with clean color blocking, solid comfort, and easy all-around wearability.",
+      "img": "https://images.unsplash.com/photo-1634624943296-54ce51cf732c?w=400&h=225&fit=crop&auto=format",
+      "alt": "A black and white Nike Dunk Low sneaker photographed against a white background.",
+      "link": "#",
+      "cta": "Add to cart"
+    },
+    "card7": {
+      "heading": "White Nike Air",
+      "body": "A crisp white court sneaker with enough support and grip for casual play and everyday movement.",
+      "img": "https://images.unsplash.com/photo-1579338559194-a162d19bf842?w=400&h=225&fit=crop&auto=format",
+      "alt": "A white Nike Air low-top sneaker hovering above a blue court surface.",
+      "link": "#",
+      "cta": "Add to cart"
+    },
+    "card8": {
+      "heading": "Neon Green Nikes",
+      "body": "A bright neon running shoe designed for visibility, comfort, and staying seen on early or late runs.",
+      "img": "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400&amp;h=225&amp;fit=crop&amp;auto=format",
+      "alt": "A neon green Nike running shoe photographed against a matching green background.",
+      "link": "#",
+      "cta": "Add to cart"
+    },
+    "card9": {
+      "heading": "Red Nike minimal running shoe",
+      "body": "A lightweight red running shoe with a stripped-back profile made for speed, flexibility, and ground feel.",
+      "img": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&amp;h=225&amp;fit=crop&amp;auto=format",
+      "alt": "A red Nike minimal running shoe photographed against a matching red background.",
+      "link": "#",
+      "cta": "Add to cart"
+    },
+    "card10": {
+      "heading": "Puma Skate Shoes",
+      "body": "A low-profile skate shoe with understated styling, neutral tones, and enough versatility to wear with just about anything.",
+      "img": "https://images.unsplash.com/photo-1634624943296-54ce51cf732c?w=400&h=225&fit=crop&auto=format",
+      "alt": "A gray, black, and white Puma low-top skate shoe photographed against a white background.",
+      "link": "#",
+      "cta": "Add to cart"
+    }
+  }
+}
