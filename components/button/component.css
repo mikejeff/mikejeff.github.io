@@ -1,0 +1,26 @@
+button,
+.button {
+  align-items: center;
+  background-color: light-dark(
+    var(--colors-neutral-300),
+    var(--colors-neutral-300)
+  );
+  border-color: light-dark(
+    var(--colors-neutral-300),
+    var(--colors-neutral-300)
+  );
+  border-radius: var(--border-radius-gentle);
+  border-style: solid;
+  border-width: 1px;
+  color: light-dark(black, var(--colors-neutral-900));
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  letter-spacing: 0.5px;
+  line-height: 1;
+  min-height: calc(2 * var(--space-lg));
+  padding-block: 0;
+  padding-inline: var(--space-lg);
+  text-decoration: none;
+  font-weight: var(--text-weights-semibold);
+}

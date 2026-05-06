@@ -1,0 +1,24 @@
+.component-example {
+  max-width: 25rem;
+  border: var(--border-composite-subtle);
+  border-radius: var(--border-radius-gentle);
+  overflow: clip;
+}
+
+.component-example__preview {
+  background: light-dark(#000, var(--themes-dark-bg-middle));
+  padding-inline: var(--space-md);
+  padding-block: var(--space-md);
+}
+
+.component-example__source {
+  font-family: var(--text-fonts-mono);
+  background-color: light-dark(#fff, var(--themes-dark-bg-base));
+  padding-inline: var(--space-md);
+  padding-block: var(--space-md);
+  overflow: auto;
+
+  & code {
+    font-size: var(--type-sm);
+  }
+}
