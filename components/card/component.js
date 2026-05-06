@@ -10,8 +10,20 @@ cardStyles.replaceSync(`
     overflow: clip;
   }
 
+  .card__header {
+    line-height: var(--text-line-heights-tight)
+  }
+
   .card__content {
     padding: var(--space-md);
+  }
+
+  .card__content > * {
+    margin-block: 0;
+  }
+
+  .card__content > * + * {
+    margin-block-start: var(--space-xs, 1.5rem);
   }
 
   img {
@@ -81,10 +93,10 @@ class mjuxCard extends HTMLElement {
     }
 
     this.shadowRoot.innerHTML = `     
-    <div stack class="stack--sm">     
+   
         ${imgHTML ?? ""}
         ${cardContentHTML ?? ""}
-    </div>
+
 
     <style>@import url("../components/button/component.css");</style>
 
