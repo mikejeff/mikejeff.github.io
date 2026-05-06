@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- TODO: Skip to content link -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/modular-scales.css" />
+    <link rel="stylesheet" href="../style-dictionary/build/css/variables.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/utilities.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+
+    <title>UX Workbench of Mike Jeffery | Component Example</title>
+  </head>
+
+  <body stack class="stack-2xl container margin-inline:auto">
+    <header class="site-header" data-include="../partials/header.html"></header>
+    <main stack id="#main" class="container margin-inline:auto stack-xl">
+      <h1>Card</h1>
+
+      <mjux-card
+        data-img="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=400&amp;h=225&amp;fit=crop&amp;auto=format"
+        data-alt="A red sneaker photographed against a yellow background."
+      ></mjux-card>
+
+      <mjux-card
+        data-heading="Cool Sneaks"
+        data-body="A simple content card with an image for short updates, product
+                notes, or supporting details. Useful when a little context goes
+                a long way."
+        data-img="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=400&amp;h=225&amp;fit=crop&amp;auto=format"
+        data-alt="A red sneaker photographed against a yellow background."
+      ></mjux-card>
+
+      <mjux-card
+        data-body="This is a simple card that includes body text only. Perfect to
+            display a lil' important info.."
+      ></mjux-card>
+
+      <mjux-card
+        data-heading="Card with link"
+        data-body="A simple content card with an image for short updates, product
+                notes, or supporting details. Useful when a little context goes
+                a long way."
+        data-img="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=400&amp;h=225&amp;fit=crop&amp;auto=format"
+        data-alt="A red sneaker photographed against a yellow background."
+        data-link="https://www.mikejeff.com"
+      ></mjux-card>
+
+      <mjux-card
+        data-heading="Card with button"
+        data-body="A simple content card with an image for short updates, product
+                notes, or supporting details. Useful when a little context goes
+                a long way."
+        data-img="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=400&amp;h=225&amp;fit=crop&amp;auto=format"
+        data-alt="A red sneaker photographed against a yellow background."
+        data-link="https://www.mikejeff.com"
+        data-cta="go!"
+      ></mjux-card>
+
+      <h2>Card Scroller</h2>
+      <div class="scroller">
+        <div id="overflowScroller" class="overflow-scroller"></div>
+      </div>
+
+      <div class="component-example">
+        <div class="component-example__preview">
+          <div class="component-example__source">
+            <pre>
+          <code>
+&lt;button class="button"&gt;Button&lt;/button&gt;
+&lt;a class="button" href="https://mikejeff.com/"&gt;Button&lt;/a&gt;
+          </code>
+        </pre>
+          </div>
+        </div>
+      </div>
+    </main>
+    <style>
+      @import url("../components/component-example/component.css");
+      @import url("../components/button/component.css");
+      .overflow-scroller {
+        display: grid;
+        gap: 1rem;
+        grid-auto-flow: column;
+        grid-auto-columns: 25rem;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+
+        & > * {
+          scroll-snap-align: start;
+          animation: scroller linear both;
+          /* scroll-snap-align: center; */
+          animation-timeline: view(x);
+        }
+      }
+
+      @keyframes scroller {
+        /* 0%,
+        100% {
+          opacity: 0.10;
+          scale: 0.9;
+        }
+
+        35%,
+        65% {
+          opacity: 1;
+          scale: 1;
+        } */
+      }
+    </style>
+
+    <footer class="site-footer" data-include="../partials/footer.html"></footer>
+    <script>
+      const el = document.getElementById("overflowScroller");
+      fetch("../data/card-scroller.json")
+        .then((response) => response.json())
+        .then((data) => {
+          const cards = data.cards;
+
+          for (let i = 0; i < Object.keys(cards).length - 1; i++) {
+            el.innerHTML += `     
+                    <mjux-card
+                      data-heading="${Object.values(cards)[i].heading}"
+                      data-body="${Object.values(cards)[i].body}"
+                      data-img="${Object.values(cards)[i].img}"
+                      data-alt="${Object.values(cards)[i].alt}"
+                      data-link="${Object.values(cards)[i].link}"
+                      data-cta="${Object.values(cards)[i].cta}"
+                      ></mjux-card>`;
+          }
+        });
+    </script>
+    <script src="../js/include-partials.js"></script>
+    <script src="../components/card/component.js"></script>
+  </body>
+</html>
