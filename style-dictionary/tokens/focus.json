@@ -12,7 +12,7 @@
       },
       "color": {
         "$type": "color",
-        "$value": "{colors.blue.200}"
+        "$value": "{color.blue.200}"
       },
       "offset": {
         "$type": "dimension",

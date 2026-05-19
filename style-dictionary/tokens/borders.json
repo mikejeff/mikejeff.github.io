@@ -9,7 +9,7 @@
         "$value": "0.5rem"
       }
     },
-    "weights": {
+    "width": {
       "$type": "borderWidth",
       "thin": {
         "$value": "1px"
@@ -21,13 +21,13 @@
         "$value": "4px"
       }
     },
-    "colors": {
+    "color": {
       "$type": "color",
       "base": {
-        "$value": "{colors.neutral.900}"
+        "$value": "{color.neutral.600}"
       },
       "muted": {
-        "$value": "{colors.neutral.300}"
+        "$value": "{color.neutral.800}"
       }
     },
     "style": {
@@ -40,23 +40,23 @@
       "$type": "border",
       "subtle": {
         "$value": {
-          "width": "{border.weights.thin}",
+          "width": "{border.width.thin}",
           "style": "{border.style.solid}",
-          "color": "{border.colors.muted}"
+          "color": "{border.color.muted}"
         }
       },
       "strong": {
         "$value": {
-          "width": "{border.weights.medium}",
+          "width": "{border.width.medium}",
           "style": "{border.style.solid}",
-          "color": "{border.colors.base}"
+          "color": "{border.color.base}"
         }
       },
       "focus": {
         "$value": {
-          "width": "{border.weights.thick}",
+          "width": "{border.width.thick}",
           "style": "{border.style.solid}",
-          "color": "{border.colors.base}"
+          "color": "{border.color.base}"
         }
       }
     }

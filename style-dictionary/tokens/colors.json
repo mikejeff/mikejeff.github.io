@@ -1,5 +1,5 @@
 {
-  "colors": {
+  "color": {
     "$type": "color",
     "neutral": {
       "50": {
@@ -190,76 +190,76 @@
     "dark": {
       "link": {
         "neutral": {
-          "$value": "{colors.blue.200}"
+          "$value": "{color.blue.200}"
         },
         "hover": {
-          "$value": "{colors.blue.100}"
+          "$value": "{color.blue.100}"
         },
         "visited": {
-          "$value": "{colors.purple.200}"
+          "$value": "{color.purple.200}"
         },
         "active": {
-          "$value": "{colors.red.200}"
+          "$value": "{color.red.200}"
         }
       },
       "bg": {
         "base": {
-          "$value": "{colors.neutral.925}"
+          "$value": "{color.neutral.925}"
         },
         "middle": {
-          "$value": "{colors.neutral.900}"
+          "$value": "{color.neutral.900}"
         },
         "top": {
-          "$value": "{colors.neutral.800}"
+          "$value": "{color.neutral.800}"
         }
       },
       "fg": {
         "base": {
-          "$value": "{colors.neutral.100}"
+          "$value": "{color.neutral.100}"
         },
         "muted": {
-          "$value": "{colors.neutral.300}"
+          "$value": "{color.neutral.500}"
         },
         "accent": {
-          "$value": "{colors.neutral.50}"
+          "$value": "{color.neutral.50}"
         }
       }
     },
     "light": {
       "link": {
         "neutral": {
-          "$value": "{colors.blue.500}"
+          "$value": "{color.blue.500}"
         },
         "hover": {
-          "$value": "{colors.blue.100}"
+          "$value": "{color.blue.100}"
         },
         "visited": {
-          "$value": "{colors.purple.200}"
+          "$value": "{color.purple.200}"
         },
         "active": {
-          "$value": "{colors.red.200}"
+          "$value": "{color.red.200}"
         }
       },
       "bg": {
         "base": {
-          "$value": "{colors.neutral.50}"
+          "$value": "{color.neutral.50}"
         },
         "middle": {
-          "$value": "{colors.neutral.200}"
+          "$value": "{color.neutral.200}"
         },
         "top": {
-          "$value": "{colors.neutral.400}"
+          "$value": "{color.neutral.400}"
         }
       },
       "fg": {
         "base": {
-          "$value": "{colors.neutral.800}"
+          "$value": "{color.neutral.800}"
         },
         "muted": {
-          "$value": "{colors.neutral.600}"
+          "$value": "{color.neutral.600}"
         },
         "accent": {
-          "$value": "{colors.neutral.950}"
+          "$value": "{color.neutral.950}"
         }
       }
     }

@@ -1,6 +1,6 @@
 {
-  "text": {
-    "fonts": {
+  "typography": {
+    "font-family": {
       "$type": "fontFamily",
       "mono": {
         "$value": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;"
@@ -9,7 +9,7 @@
         "$value": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
       }
     },
-    "sizes": {
+    "font-size": {
       "$type": "fontSize",
       "heading": {
         "$value": "2.5"
@@ -18,7 +18,7 @@
         "$value": "1"
       }
     },
-    "weights": {
+    "font-weight": {
       "$type": "fontWeight",
       "light": {
         "$type": "number",
@@ -37,34 +37,34 @@
         "$value": "700"
       }
     },
-    "lineHeights": {
+    "line-height": {
       "$type": "number",
-      "normal": {
-        "$value": 1.5
-      },
       "tight": {
         "$value": 1.2
+      },
+      "normal": {
+        "$value": 1.5
       },
       "large": {
         "$value": 1.8
       }
     },
-    "typography": {
+    "composed": {
       "$type": "typography",
       "heading": {
         "$value": {
-          "fontFamily": "{text.fonts.sans}",
-          "fontWeight": "{text.weights.bold}",
-          "fontSize": "{text.sizes.heading}",
-          "lineHeight": "{text.lineHeights.tight}"
+          "fontFamily": "{typography.font-family.sans}",
+          "fontWeight": "{typography.font-weight.bold}",
+          "fontSize": "{typography.font-size.heading}",
+          "lineHeight": "{typography.line-height.tight}"
         }
       },
       "body": {
         "$value": {
-          "fontFamily": "{text.fonts.sans}",
-          "fontWeight": "{text.weights.regular}",
-          "fontSize": "{text.sizes.body}",
-          "lineHeight": "{text.lineHeights.normal}"
+          "fontFamily": "{typography.font-family.sans}",
+          "fontWeight": "{typography.font-weight.regular}",
+          "fontSize": "{typography.font-size.body}",
+          "lineHeight": "{typography.line-height.normal}"
         }
       }
     }
