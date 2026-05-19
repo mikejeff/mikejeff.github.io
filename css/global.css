@@ -65,18 +65,66 @@ html {
 }
 
 body {
-  font: var(--text-typography-body);
+  font: var(--typography-composed-body);
   font-size: var(--type-md);
   padding-inline: var(--space-xs);
 }
 
 code {
-  font-family: var(--text-fonts-mono);
+  font-family: var(--typography-font-family-mono);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: var(--typography-composed-heading);
+  margin-block-end: calc(var(--space-lg) / 2);
+  margin-block-start: var(--space-lg);
+  text-box-edge: cap alphabetic;
+  text-box-trim: trim-both;
 }
 
 h1 {
-  font: var(--text-typography-heading);
   font-size: var(--type-4xl);
+}
+
+h2 {
+  font-size: var(--type-3xl);
+}
+
+h3 {
+  font-size: var(--type-xl);
+}
+
+:is(h1, h2, h3, h4, h5, h6) + * {
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  caption-side: bottom;
+  table-layout: fixed;
+  width: 100%;
+
+  thead {
+    background-color: #333;
+    color: white;
+  }
+
+  td {
+    font-size: 0.9em;
+  }
+
+  td,
+  th {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    text-align: left;
+    word-break: normal;
+  }
 }
 
 .container {
