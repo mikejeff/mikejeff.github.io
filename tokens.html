@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- TODO: Skip to content link -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/modular-scales.css" />
+    <link rel="stylesheet" href="../style-dictionary/build/css/variables.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/utilities.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+
+    <title>UX Workbench of Mike Jeffery | Tokens</title>
+  </head>
+
+  <body stack class="stack-2xl container margin-inline:auto">
+    <header class="site-header" data-include="../partials/header.html"></header>
+    <main stack id="#main" class="container margin-inline:auto stack-2xl">
+      <header>
+        <h1>Tokens</h1>
+        <p>
+          Tokens are the smallest building block available to you. They are the
+          what give your components a cohesive look and feel.
+        </p>
+      </header>
+
+      <div id="borders" stack class="stack-xl">
+        <header>
+          <h2>Borders</h2>
+          <p>
+            You can see the structure of the border tokens by navigating to the
+            <a href="./style-dictionary/tokens/borders.json">json file</a>.
+          </p>
+        </header>
+
+        <section stack>
+          <h3>Border style</h3>
+          <div class="overflow-x:auto">
+            <table id="borderStyleTable">
+              <thead>
+                <tr>
+                  <th scope="col">CSS Custom Property</th>
+                  <th scope="col">Value</th>
+                  <th scope="col">Example</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section stack>
+          <h3>Border width</h3>
+          <div class="overflow-x:auto">
+            <table id="borderWidthTable">
+              <thead>
+                <tr>
+                  <th scope="col">CSS Custom Property</th>
+                  <th scope="col">Value</th>
+                  <th scope="col">Example</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section stack>
+          <h3>Border radius</h3>
+          <div class="overflow-x:auto">
+            <table id="borderRadiusTable">
+              <thead>
+                <tr>
+                  <th scope="col">CSS Custom Property</th>
+                  <th scope="col">Value</th>
+                  <th scope="col">Example</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section stack>
+          <h3>Border color</h3>
+          <div class="overflow-x:auto">
+            <table id="borderColorTable">
+              <thead>
+                <tr>
+                  <th scope="col">CSS Custom Property</th>
+                  <th scope="col">Value</th>
+                  <th scope="col">Example</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+
+      <div id="typography" stack class="stack-xl">
+        <h2>Typography</h2>
+        <p>
+          You can see the structure of the typography tokens by navigating to
+          the
+          <a href="./style-dictionary/tokens/text.json">json file</a>.
+        </p>
+
+        <section stack>
+          <h3>Fonts</h3>
+          <div class="overflow-x:auto">
+            <table id="typeFontsTable">
+              <thead>
+                <tr>
+                  <th scope="col">CSS Custom Property</th>
+                  <th scope="col">Value</th>
+                  <th scope="col">Example</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section stack>
+          <h3>Fluid Typescale</h3>
+          <small>*not yet tokenized</small>
+          <div class="overflow-x:auto">
+            <table id="typeTypescaleTable">
+              <thead>
+                <tr>
+                  <th scope="col">CSS Custom Property</th>
+                  <th scope="col">Value</th>
+                  <th scope="col">Example</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>--type-2xs</td>
+                  <td></td>
+                  <td style="font-size: var(--type-2xs)">
+                    The quick brown fox jumps over the lazy dog
+                  </td>
+                </tr>
+                <tr>
+                  <td>--type-xs</td>
+                  <td></td>
+                  <td style="font-size: var(--type-xs)">
+                    The quick brown fox jumps over the lazy dog
+                  </td>
+                </tr>
+                <tr>
+                  <td>--type-sm</td>
+                  <td></td>
+                  <td style="font-size: var(--type-sm)">
+                    The quick brown fox jumps over the lazy dog
+                  </td>
+                </tr>
+                <tr>
+                  <td>--type-md</td>
+                  <td></td>
+                  <td style="font-size: var(--type-md)">
+                    The quick brown fox jumps over the lazy dog
+                  </td>
+                </tr>
+                <tr>
+                  <td>--type-lg</td>
+                  <td></td>
+                  <td style="font-size: var(--type-lg)">
+                    The quick brown fox jumps over the lazy dog
+                  </td>
+                </tr>
+                <tr>
+                  <td>--type-xl</td>
+                  <td></td>
+                  <td style="font-size: var(--type-xl)">
+                    The quick brown fox jumps over the lazy dog
+                  </td>
+                </tr>
+                <tr>
+                  <td>--type-2xl</td>
+                  <td></td>
+                  <td style="font-size: var(--type-2xl)">
+                    The quick brown fox jumps over the lazy dog
+                  </td>
+                </tr>
+                <tr>
+                  <td>--type-3xl</td>
+                  <td></td>
+                  <td style="font-size: var(--type-3xl)">
+                    The quick brown fox jumps over the lazy dog
+                  </td>
+                </tr>
+                <tr>
+                  <td>--type-4xl</td>
+                  <td></td>
+                  <td style="font-size: var(--type-4xl)">
+                    The quick brown fox jumps over the lazy dog
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section stack>
+          <h3>Sizes</h3>
+          <div class="overflow-x:auto">
+            <table id="typeSizesTable">
+              <thead>
+                <tr>
+                  <th scope="col">CSS Custom Property</th>
+                  <th scope="col">Value</th>
+                  <th scope="col">Example</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section stack>
+          <h3>Weights</h3>
+          <div class="overflow-x:auto">
+            <table id="typeWeightsTable">
+              <thead>
+                <tr>
+                  <th scope="col">CSS Custom Property</th>
+                  <th scope="col">Value</th>
+                  <th scope="col">Example</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section stack>
+          <h3>Line Height</h3>
+          <div class="overflow-x:auto">
+            <table id="typeLineHeightTable">
+              <thead>
+                <tr>
+                  <th scope="col">CSS Custom Property</th>
+                  <th scope="col">Value</th>
+                  <th scope="col">Example</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+
+      <!-- <section>
+        <h3>Composed</h3>
+        <div class="overflow-x:auto">
+          <table id="typeComposedTable">
+            <thead>
+              <tr>
+                <th scope="col">CSS Custom Property</th>
+                <th scope="col">Value</th>
+                <th scope="col">Example</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section> -->
+    </main>
+
+    <footer class="site-footer" data-include="../partials/footer.html"></footer>
+
+    <script>
+      const borderColorTable = document.querySelector("#borderColorTable");
+      const borderStyleTable = document.querySelector("#borderStyleTable");
+      const borderRadiusTable = document.querySelector("#borderRadiusTable");
+      const borderWidthTable = document.querySelector("#borderWidthTable");
+
+      async function loadBorders() {
+        try {
+          const response = await fetch(
+            "./style-dictionary/tokens/borders.json",
+          );
+          const data = await response.json();
+          // Iterate over each token set under `border`
+          for (const [groupName, group] of Object.entries(data.border)) {
+            // Skip metadata like "$type"
+            for (const [tokenName, token] of Object.entries(group)) {
+              if (tokenName.startsWith("$")) continue;
+
+              if (groupName === "radius") {
+                borderRadiusTable.innerHTML += `
+                  <tr>
+                      <td><code>--border-${groupName}-${tokenName}</code></td>
+                      <td>${token.$value}</td>
+                      <td><div class="example-div"style="border-${groupName}: var(--border-${groupName}-${tokenName})"></div></td>
+                  </tr>
+                `;
+              }
+
+              if (groupName === "width") {
+                borderWidthTable.innerHTML += `
+                  <tr>
+                      <td><code>--border-${groupName}-${tokenName}</code></td>
+                      <td>${token.$value}</td>
+                      <td><div class="example-div"style="border-${groupName}: var(--border-${groupName}-${tokenName})"></div></td>
+                  </tr>
+                `;
+              }
+
+              if (groupName === "style") {
+                borderStyleTable.innerHTML += `
+                  <tr>
+                      <td><code>--border-${groupName}-${tokenName}</code></td>
+                      <td>${token.$value}</td>
+                      <td><div class="example-div"style="border-${groupName}: var(--border-${groupName}-${tokenName})"></div></td>
+                  </tr>
+                `;
+              }
+
+              if (groupName === "color") {
+                borderColorTable.innerHTML += `
+                  <tr>
+                      <td><code>--border-${groupName}-${tokenName}</code></td>
+                      <td>${token.$value}</td>
+                      <td><div class="example-div"style="border-${groupName}: var(--border-${groupName}-${tokenName})"></div></td>
+                  </tr>
+                `;
+              }
+            }
+          }
+        } catch (error) {
+          console.error(error);
+        }
+      }
+
+      loadBorders();
+    </script>
+
+    <script>
+      const typeFontsTable = document.querySelector("#typeFontsTable");
+      const typeSizesTable = document.querySelector("#typeSizesTable");
+      const typeWeightsTable = document.querySelector("#typeWeightsTable");
+      const typeLineHeightTable = document.querySelector(
+        "#typeLineHeightTable",
+      );
+      const typeComposedTable = document.querySelector("#typeComposedTable");
+
+      async function loadTypography() {
+        try {
+          const response = await fetch(
+            "./style-dictionary/tokens/typography.json",
+          );
+          const data = await response.json();
+          console.log(data);
+          // Iterate over each token set under `typography`
+          for (const [groupName, group] of Object.entries(data.typography)) {
+            // Skip metadata like "$type"
+            for (const [tokenName, token] of Object.entries(group)) {
+              if (tokenName.startsWith("$")) continue;
+
+              if (groupName === "font-family") {
+                typeFontsTable.innerHTML += `
+                  <tr>
+                      <td><code>--typography-${groupName}-${tokenName}</code></td>
+                      <td>${token.$value}</td>
+                      <td><div class="" 
+                        style="
+                        ${groupName}: var(--typography-${groupName}-${tokenName})
+                        
+                        ">The quick brown fox jumps over the lazy dog</div></td>
+                  </tr>
+                `;
+              }
+
+              if (groupName === "font-size") {
+                typeSizesTable.innerHTML += `
+                  <tr>
+                      <td><code>--typography-${groupName}-${tokenName}</code></td>
+                      <td>${token.$value}rem</td>
+                      <td style="${groupName}: var(--typography-${groupName}-${tokenName})">The quick brown fox jumps over the lazy dog</td>
+                  </tr>
+                `;
+              }
+
+              if (groupName === "font-weight") {
+                typeWeightsTable.innerHTML += `
+                  <tr>
+                      <td><code>--typography-${groupName}-${tokenName}</code></td>
+                      <td>${token.$value}</td>
+                      <td style="${groupName}: var(--typography-${groupName}-${tokenName})">The quick brown fox jumps over the lazy dog</td>
+                  </tr>
+                `;
+              }
+
+              if (groupName === "line-height") {
+                typeLineHeightTable.innerHTML += `
+                  <tr>
+                      <td><code>--typography-${groupName}-${tokenName}</code></td>
+                      <td>${token.$value}</td>
+                      <td style="${groupName}: var(--typography-${groupName}-${tokenName})">
+                        
+                        
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </td>
+                  </tr>
+                `;
+              }
+
+              // if (groupName === "composed") {
+              //   typeComposedTable.innerHTML += `
+              //     <tr>
+              //         <td><code>--typography-${groupName}-${tokenName}</code></td>
+              //         <td>${token.$value}</td>
+              //         <td><div class=""
+              //           style="
+              //           font: var(--typography-${groupName}-${tokenName})
+
+              //           ">The quick brown fox jumps over the lazy dog</div></td>
+              //     </tr>
+              //   `;
+              // }
+            }
+          }
+        } catch (error) {
+          console.error(error);
+        }
+      }
+
+      loadTypography();
+    </script>
+
+    <script src="../js/include-partials.js"></script>
+
+    <style>
+      .example-div {
+        width: 2rem;
+        height: 2rem;
+        border: 1px solid white;
+      }
+
+      .code-example-li {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+      }
+    </style>
+  </body>
+</html>
