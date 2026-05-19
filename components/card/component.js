@@ -8,6 +8,39 @@ cardStyles.replaceSync(`
     max-width: 25rem;
     display: block;
     overflow: clip;
+    position: relative;
+  }
+
+  :host([data-link]) {
+    cursor: pointer;
+    border: var(--border-composite-strong);
+    border-color: light-dark(#000, var(--color-neutral-200));
+  }
+
+  :host([data-link]:focus-within) { 
+    outline: var(--focus-ring-composite);
+    outline-offset: var(--focus-ring-offset);
+  }
+
+  :host([data-link]:focus-within) a { 
+    outline: none;
+  }
+
+  :host([data-link]:hover) { 
+    border-color: var(--color-blue-200);
+  }
+
+  :host([data-link]) a {
+    color: inherit;
+
+}
+
+
+
+  :host([data-link]) a::after {
+    content: '';
+    position: absolute;
+    inset: 0;
   }
 
   .card__header {
@@ -67,6 +100,13 @@ class mjuxCard extends HTMLElement {
 
     if (link && !cta) {
       headingHTML = `<h3 class="card__header"><a href="${link}">${heading}</a></h3>`;
+
+      // function handleClick(event) {
+      //   window.location.href = link;
+      // }
+
+      // this.addEventListener("click", handleClick);
+      // this.style.cursor = "pointer";
     }
 
     if (heading || body) {
@@ -75,7 +115,7 @@ class mjuxCard extends HTMLElement {
             <div class="card__content">
             ${headingHTML ?? ""}
             ${bodyHTML ?? ""}
-            <a class="button" href="${link}">${cta}</a>
+            <button>${cta}</button>
             </div>
         `;
       } else {

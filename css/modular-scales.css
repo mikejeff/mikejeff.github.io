@@ -1,6 +1,7 @@
 /* @link https://utopia.fyi/type/calculator/?c=360,16,1.2,1536,20,1.25,5,7,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
 :root {
+  /* I broke out the min values to use in small "space" sizes without responsiveness */
   --s--7--min: 0.2621rem;
   --s--6--min: 0.3277rem;
   --s--5--min: 0.4019rem;
@@ -31,24 +32,23 @@
 
   /* typography */
   --type-2xs: var(--s--3); /* 0.5787rem -> 0.64rem */
-  --type-xs:  var(--s--2); /* 0.6944rem -> 0.8rem */
-  --type-sm:  var(--s--1); /* 0.8333rem -> 1rem */
-  --type-md:  var(--s-0);  /*  1rem -> 1.25rem */
-  --type-lg:  var(--s-1);  /* 1.2rem -> 1.5625rem */
-  --type-xl:  var(--s-2);  /* 1.44rem -> 1.9531rem) */
-  --type-2xl: var(--s-3);  /* 1.728rem -> 2.4414rem) */
-  --type-3xl: var(--s-4);  /* 2.0736rem -> 3.0518rem */
-  --type-4xl: var(--s-5);  /* 2.4883rem -> 3.8147rem */
+  --type-xs: var(--s--2); /* 0.6944rem -> 0.8rem */
+  --type-sm: var(--s--1); /* 0.8333rem -> 1rem */
+  --type-md: var(--s-0); /*  1rem -> 1.25rem */
+  --type-lg: var(--s-1); /* 1.2rem -> 1.5625rem */
+  --type-xl: var(--s-2); /* 1.44rem -> 1.9531rem) */
+  --type-2xl: var(--s-3); /* 1.728rem -> 2.4414rem) */
+  --type-3xl: var(--s-4); /* 2.0736rem -> 3.0518rem */
+  --type-4xl: var(--s-5); /* 2.4883rem -> 3.8147rem */
 
   /* space */
   --space-2xs: var(--s--7--min); /* 0.2621rem */
-  --space-xs:  var(--s--3--min); /* 0.5787rem */
-  --space-sm:  var(--s--1--min); /* 0.8333rem */
-  --space-md:  var(--s-0--min);  /* 1rem */
-  --space-lg:  var(--s-1--min);  /* 1.2rem */
-  --space-xl:  var(--s-2--min);  /* 1.44rem */
-  --space-2xl:  var(--s-3);      /* 1.728rem -> 2.4414rem */
-  --space-3xl: var(--s-4);       /* 2.0736rem -> 3.0518rem */
-  --space-4xl: var(--s-5);       /* 2.4883rem -> 3.8147rem */
-
+  --space-xs: var(--s--3--min); /* 0.5787rem */
+  --space-sm: var(--s--1--min); /* 0.8333rem */
+  --space-md: var(--s-0--min); /* 1rem */
+  --space-lg: var(--s-1--min); /* 1.2rem */
+  --space-xl: var(--s-2--min); /* 1.44rem */
+  --space-2xl: var(--s-3); /* 1.728rem -> 2.4414rem */
+  --space-3xl: var(--s-4); /* 2.0736rem -> 3.0518rem */
+  --space-4xl: var(--s-5); /* 2.4883rem -> 3.8147rem */
 }
