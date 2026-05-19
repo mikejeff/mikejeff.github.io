@@ -43,7 +43,7 @@
       }
 
       function toCssVarName(pathParts) {
-        return `--colors-${pathParts.join("-")}`;
+        return `--color-${pathParts.join("-")}`;
       }
 
       function flattenColors(node, path = []) {
@@ -95,7 +95,7 @@
 
         try {
           const data = await loadTokens();
-          const tokens = flattenColors(data.colors);
+          const tokens = flattenColors(data.color);
 
           tokens.forEach((token) => {
             container.append(createSwatch(token));
