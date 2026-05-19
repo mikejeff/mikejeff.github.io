@@ -1,3 +1,7 @@
 .margin-inline\:auto {
   margin-inline: auto;
 }
+
+.overflow-x\:auto {
+  overflow-x: auto;
+}
