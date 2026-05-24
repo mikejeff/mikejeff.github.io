@@ -3,17 +3,22 @@ const cardStyles = new CSSStyleSheet();
 cardStyles.replaceSync(`
 
   :host {
-    border: var(--border-composite-subtle);
+  background-color: var(--surface-middle);
+  border:
+    var(--border-width-thin)
+    var(--border-style-solid)
+    var(--border-color-muted)  
+  ;
     border-radius: var(--border-radius-gentle);
-    max-width: 25rem;
     display: block;
+    max-width: 25rem;
     overflow: clip;
     position: relative;
   }
 
   :host([data-link]) {
     cursor: pointer;
-    border: var(--border-composite-strong);
+    border-color: var(--border-color-base);
     border-color: light-dark(#000, var(--color-neutral-200));
   }
 
