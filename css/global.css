@@ -1,5 +1,19 @@
 :root {
   color-scheme: light dark;
+
+  /* colors */
+  --surface-base: light-dark(
+    var(--themes-light-bg-base),
+    var(--themes-dark-bg-base)
+  );
+  --surface-middle: light-dark(
+    var(--themes-light-bg-middle),
+    var(--themes-dark-bg-middle)
+  );
+  --surface-top: light-dark(
+    var(--themes-light-bg-top),
+    var(--themes-dark-bg-top)
+  );
 }
 
 :where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
@@ -60,7 +74,7 @@ a:not([class]):visited:active {} */
 
 html {
   font-size: 100%;
-  background-color: light-dark(hsl(0deg 0% 100%), var(--themes-dark-bg-base));
+  background-color: var(--surface-base);
   color: light-dark(#000, var(--themes-dark-fg-base));
 }
 
@@ -92,7 +106,7 @@ h1 {
 }
 
 h2 {
-  font-size: var(--type-3xl);
+  font-size: var(--type-2xl);
 }
 
 h3 {
