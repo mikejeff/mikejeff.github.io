@@ -15,57 +15,104 @@
     <title>UX Workbench of Mike Jeffery | Cards</title>
   </head>
 
-  <body stack class="stack-2xl container margin-inline:auto">
+  <body stack class="stack-4xl container margin-inline:auto">
     <header class="site-header" data-include="../partials/header.html"></header>
-    <main stack id="#main" class="container margin-inline:auto stack-xl">
-      <h1>Card</h1>
+    <main stack id="#main" class="container margin-inline:auto stack-3xl">
+      <header>
+        <h1>Card</h1>
+        <p>
+          Cards are a flexible way to group related content into a single,
+          scannable unit. They work well for products, articles, profiles, and
+          other content that benefits from a visual container. Depending on the
+          use case, a card may include text, images, links, or actions.
+        </p>
+      </header>
 
-      <mjux-card
-        data-img="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=400&amp;h=225&amp;fit=crop&amp;auto=format"
-        data-alt="A red sneaker photographed against a yellow background."
-      ></mjux-card>
-
-      <mjux-card
-        data-heading="Cool Sneaks"
-        data-body="A simple content card with an image for short updates, product
-                notes, or supporting details. Useful when a little context goes
-                a long way."
-        data-img="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=400&amp;h=225&amp;fit=crop&amp;auto=format"
-        data-alt="A red sneaker photographed against a yellow background."
-      ></mjux-card>
-
-      <mjux-card
-        data-body="This is a simple card that includes body text only. Perfect to
+      <section stack>
+        <div>
+          <h2>Text-only card</h2>
+          <p>
+            Not every card needs an image. A text-only card is a good choice
+            when the content itself is the focus and supporting media doesn't
+            add much value. This keeps the interface lightweight while still
+            providing a clear visual boundary around the content.
+          </p>
+        </div>
+        <mjux-card
+          data-body="This is a simple card that includes body text only. Perfect to
             display a lil' important info.."
-      ></mjux-card>
+        ></mjux-card>
+      </section>
 
-      <mjux-card
-        data-heading="Card with link"
-        data-body="A simple content card with an image for short updates, product
+      <section stack>
+        <div>
+          <h2>Image card</h2>
+          <p>
+            Images can help users quickly understand what a card represents.
+            Adding media is especially useful for products, articles,
+            destinations, or any content where a visual preview provides
+            meaningful context. The image should support the content, not
+            compete with it.
+          </p>
+        </div>
+        <mjux-card
+          data-heading="Cool Sneaks"
+          data-body="A simple content card with an image for short updates, product
                 notes, or supporting details. Useful when a little context goes
                 a long way."
-        data-img="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=400&amp;h=225&amp;fit=crop&amp;auto=format"
-        data-alt="A red sneaker photographed against a yellow background."
-        data-link="https://www.mikejeff.com"
-      ></mjux-card>
+          data-img="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=400&amp;h=225&amp;fit=crop&amp;auto=format"
+          data-alt="A red sneaker photographed against a yellow background."
+        ></mjux-card>
+      </section>
 
-      <h2>Card Scroller</h2>
-      <div class="scroller">
-        <div id="overflowScroller" class="overflow-scroller"></div>
-      </div>
+      <section stack>
+        <div>
+          <h2>Image card with link</h2>
+          <p>
+            Cards often serve as a gateway to more detailed information. In this
+            variation, the heading remains the semantic link while the entire
+            card becomes a larger click target. This improves usability without
+            sacrificing accessibility or discoverability.
+          </p>
+        </div>
+        <mjux-card
+          data-heading="Card with link"
+          data-body="A simple content card with an image for short updates, product
+                notes, or supporting details. Useful when a little context goes
+                a long way."
+          data-img="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=400&amp;h=225&amp;fit=crop&amp;auto=format"
+          data-alt="A red sneaker photographed against a yellow background."
+          data-link="https://www.mikejeff.com"
+        ></mjux-card>
+      </section>
 
-      <div class="component-example">
-        <div class="component-example__preview">
-          <div class="component-example__source">
-            <pre>
+      <section stack>
+        <div>
+          <h2>Card Scroller</h2>
+          <p>
+            When several related cards need to be presented in a limited amount
+            of space, a horizontal card scroller can be an effective solution.
+            It allows users to browse a collection without overwhelming the page
+            while maintaining a consistent card layout.
+          </p>
+        </div>
+        <div class="scroller">
+          <div id="overflowScroller" class="overflow-scroller"></div>
+        </div>
+
+        <div class="component-example">
+          <div class="component-example__preview">
+            <div class="component-example__source">
+              <pre>
           <code>
 &lt;button class="button"&gt;Button&lt;/button&gt;
 &lt;a class="button" href="https://mikejeff.com/"&gt;Button&lt;/a&gt;
           </code>
         </pre>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
     <style>
       @import url("../components/component-example/component.css");
